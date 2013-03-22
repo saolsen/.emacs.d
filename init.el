@@ -30,7 +30,7 @@
     (package-install p)))
 
 ;; Load the provided Clojure start kit configurations
-(load (concat user-emacs-directory "clojure-starter-kit.el"))
+(load (concat user-emacs-directory "stevesconfigs.el"))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

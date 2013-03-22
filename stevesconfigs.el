@@ -1,3 +1,5 @@
+;; Most of this is copied from rkneufeld, also uses emacs starter kit stuffs
+
 ;; General
 (setq initial-scratch-message nil)                                         ; *scratch* starts empty
 (when (locate-library "clojure-mode")                                      ; Set *scratch* to Clojure mode
@@ -59,3 +61,12 @@
             (define-key ido-completion-map [up] 'ido-prev-match)
             (define-key ido-completion-map (kbd "C-n") 'ido-next-match)
             (define-key ido-completion-map (kbd "C-p") 'ido-prev-match)))
+
+;; Steves stuff
+;; M-x RETURN for commands
+(global-set-key "\C-x\C-m" 'execute-extended-command)
+
+(global-set-key (kbd "<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "<down>") 'shrink-window)
+(global-set-key (kbd "<up>") 'enlarge-window)
