@@ -9,7 +9,7 @@
 (setq projectile-show-paths-function 'projectile-hashify-with-relative-paths) ; Projectile shows full relative paths
 
 ;; Visual
-(load-theme 'twilight t)                                                   ; Load my preferred theme, twilight
+(load-theme 'solarized-dark t)                                                   ; Load my preferred theme, twilight
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)                        ; Enable rainbow delimiters when programming
 (remove-hook 'prog-mode-hook 'esk-turn-on-hl-line-mode)                    ; Disable emacs-starter-kits line highlighting
 
@@ -39,7 +39,6 @@
 
 (add-to-list 'same-window-buffer-names "*nrepl*")                          ; Make C-c C-z switch to *nrepl*
 
-
 ;; Ido-mode customizations
 (setq ido-decorations                                                      ; Make ido-mode display vertically
       (quote
@@ -63,9 +62,13 @@
             (define-key ido-completion-map (kbd "C-p") 'ido-prev-match)))
 
 ;; Steves stuff
+;; Bin path for ack (and other things)
+(setq exec-path (append exec-path '("/usr/local/bin/")))
+
 ;; M-x RETURN for commands
 (global-set-key "\C-x\C-m" 'execute-extended-command)
 
+;; Buffer resizing
 (global-set-key (kbd "<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "<down>") 'shrink-window)
