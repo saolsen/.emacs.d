@@ -73,3 +73,6 @@
 (global-set-key (kbd "<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "<down>") 'shrink-window)
 (global-set-key (kbd "<up>") 'enlarge-window)
+
+;; ESS config for julia (my laptop specific)
+(setq inferior-julia-program-name "/Users/steveo/dev/other/julia/usr/bin/julia-release-basic")

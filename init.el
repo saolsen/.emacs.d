@@ -24,6 +24,8 @@
                       hlinum
                       ;; other stuffs I need
                       magit
+                      fsharp-mode
+                      ess
                       )
   "A list of packages to ensure are installed at launch.")
 
